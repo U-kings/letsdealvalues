@@ -12,7 +12,7 @@ const Contact = () => {
                   CONTACT US
                 </span>
                 <h2 className="max-w-[260px] text-[35px] font-semibold leading-[1.14] text-dark dark:text-white">
-                  Let&#39;s talk about your problem.
+                  Got questions or feedback?
                 </h2>
               </div>
               <div className="mb-12 flex flex-wrap justify-between lg:mb-0">
@@ -29,15 +29,15 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="mb-[18px] text-lg font-semibold text-dark dark:text-white">
+                    <h3 className="mb-4.5 text-lg font-semibold text-dark dark:text-white">
                       Our Location
                     </h3>
                     <p className="text-base text-body-color dark:text-dark-6">
-                      401 Broadway, 24th Floor, Orchard Cloud View, London
+                      Suite 31, pepple street ,Ikeja
                     </p>
                   </div>
                 </div>
-                <div className="mb-8 flex w-[330px] max-w-full">
+                <div className="mb-8 flex w-82.5 max-w-full">
                   <div className="mr-6 text-[32px] text-primary">
                     <svg
                       width="34"
@@ -49,15 +49,15 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="mb-[18px] text-lg font-semibold text-dark dark:text-white">
+                    <h3 className="mb-4.5 text-lg font-semibold text-dark dark:text-white">
                       How Can We Help?
                     </h3>
                     <p className="text-base text-body-color dark:text-dark-6">
-                      info@yourdomain.com
+                      Help-Supports@Letsdealvalues.com
                     </p>
-                    <p className="mt-1 text-base text-body-color dark:text-dark-6">
+                    {/* <p className="mt-1 text-base text-body-color dark:text-dark-6">
                       contact@yourdomain.com
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </div>
@@ -73,7 +73,7 @@ const Contact = () => {
                 Send us a Message
               </h3>
               <form>
-                <div className="mb-[22px]">
+                <div className="mb-5.5">
                   <label
                     htmlFor="fullName"
                     className="mb-4 block text-sm text-body-color dark:text-dark-6"
@@ -87,7 +87,7 @@ const Contact = () => {
                     className="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-white"
                   />
                 </div>
-                <div className="mb-[22px]">
+                <div className="mb-5.5">
                   <label
                     htmlFor="email"
                     className="mb-4 block text-sm text-body-color dark:text-dark-6"
