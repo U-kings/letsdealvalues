@@ -31,23 +31,23 @@ const menuData: Menu[] = [
 //     path: "/blogs",
 //     newTab: false,
 //   },
-  {
-    id: 6,
-    title: "Company",
-    newTab: false,
-    submenu: [
-      {
-        id: 61,
-        title: "About",
-        path: "/about",
-        newTab: false,
-      },
-      {
-        id: 62,
-        title: "Terms and Conditions",
-        path: "/pricing",
-        newTab: false,
-      },
+  // {
+  //   id: 6,
+  //   title: "Company",
+  //   newTab: false,
+  //   submenu: [
+      // {
+      //   id: 61,
+      //   title: "About",
+      //   path: "/about",
+      //   newTab: false,
+      // },
+      // {
+      //   id: 62,
+      //   title: "Terms and Conditions",
+      //   path: "/pricing",
+      //   newTab: false,
+      // },
       // {
       //   id: 63,
       //   title: "Contact Page",
@@ -78,7 +78,7 @@ const menuData: Menu[] = [
       //   path: "/error",
       //   newTab: false,
       // },
-    ],
-  },
+    // ],
+  // },
 ];
 export default menuData;

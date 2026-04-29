@@ -20,7 +20,7 @@ const Footer = () => {
         data-wow-delay=".15s"
       >
         <div className="container">
-          <div className="-mx-4 flex flex-wrap">
+          <div className="-mx-4 flex flex-wrap justify-between">
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-4/12 xl:w-3/12">
               <div className="mb-10 w-full">
                 <Link href="/" className="mb-0 inline-block max-w-40">
@@ -41,7 +41,7 @@ const Footer = () => {
                   <Link
                     aria-label="social link"
                     href="#"
-                    className="px-3 text-black font-medium hover:text-white"
+                    className="px-3 text-black font-medium hover:text-black"
                   >
                     <svg
                       width="22"
@@ -56,8 +56,9 @@ const Footer = () => {
                   </Link>
                   <Link
                     aria-label="social link"
-                    href="#"
-                    className="px-3 text-black font-medium hover:text-white"
+                    href=" https://x.com/LetsDeal_Values"
+                    className="px-3 text-black font-medium hover:text-black"
+                    target="_blank"
                   >
                     <svg
                       width="22"
@@ -73,7 +74,7 @@ const Footer = () => {
                   <Link
                     aria-label="social link"
                     href="#"
-                    className="px-3 text-black font-medium hover:text-white"
+                    className="px-3 text-black font-medium hover:text-black"
                   >
                     <svg
                       width="22"
@@ -91,7 +92,7 @@ const Footer = () => {
                   <Link
                     aria-label="social link"
                     href="#"
-                    className="px-3 text-black font-medium hover:text-white"
+                    className="px-3 text-black font-medium hover:text-black"
                   >
                     <svg
                       width="22"
@@ -123,15 +124,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href="#"
-                      className="mb-3 inline-block text-base text-black font-medium hover:text-primary"
-                    >
-                      Features
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="#"
+                      href="about"
                       className="mb-3 inline-block text-base text-black font-medium hover:text-primary"
                     >
                       About
@@ -139,12 +132,20 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
+                      href="vendors"
+                      className="mb-3 inline-block text-base text-black font-medium hover:text-primary"
+                    >
+                      Vendors
+                    </Link>
+                  </li>
+                  {/* <li>
+                    <Link
                       href="#"
                       className="mb-3 inline-block text-base text-black font-medium hover:text-primary"
                     >
                       Testimonial
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
@@ -159,7 +160,8 @@ const Footer = () => {
                       href="#"
                       className="mb-3 inline-block text-base text-black font-medium hover:text-primary"
                     >
-                      How it works
+                      Web Development
+                       {/* and Design */}
                     </Link>
                   </li>
                   <li>
@@ -167,7 +169,8 @@ const Footer = () => {
                       href="#"
                       className="mb-3 inline-block text-base text-black font-medium hover:text-primary"
                     >
-                      Privacy policy
+                      Digital Marketing
+                       {/* and Training */}
                     </Link>
                   </li>
                   <li>
@@ -175,17 +178,17 @@ const Footer = () => {
                       href="#"
                       className="mb-3 inline-block text-base text-black font-medium hover:text-primary"
                     >
-                      Terms of Service
+                     IT Hardware Services
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link
                       href="#"
                       className="mb-3 inline-block text-base text-black font-medium hover:text-primary"
                     >
                       Refund policy
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
@@ -200,33 +203,33 @@ const Footer = () => {
                       href="#"
                       className="mb-3 inline-block text-base text-black font-medium hover:text-primary"
                     >
-                      LineIcons
+                      IT Infrastructure
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link
                       href="#"
                       className="mb-3 inline-block text-base text-black font-medium hover:text-primary"
                     >
                       Next.js Templates
                     </Link>
-                  </li>
-                  <li>
+                  </li> */}
+                  {/* <li>
                     <Link
                       href="#"
                       className="mb-3 inline-block text-base text-black font-medium hover:text-primary"
                     >
                       TailAdmin
                     </Link>
-                  </li>
-                  <li>
+                  </li> */}
+                  {/* <li>
                     <Link
                       href="#"
                       className="mb-3 inline-block text-base text-black font-medium hover:text-primary"
                     >
                       PlainAdmin
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>

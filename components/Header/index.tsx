@@ -166,6 +166,9 @@ const Header = () => {
                                 } ${pathUrl === menuItem?.path &&
                                 sticky &&
                                 "text-primary!"
+                                } ${pathUrl === menuItem?.path &&
+                                !sticky &&
+                                "text-primary!"
                                 }`}
                             >
                               {menuItem.title}
