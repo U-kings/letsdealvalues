@@ -10,14 +10,14 @@ import EmailProvider from "next-auth/providers/email";
 import type { Adapter } from "next-auth/adapters";
 
 export const authOptions: NextAuthOptions = {
-  pages: {
-    signIn: "/auth/signin",
-  },
+  // pages: {
+  //   signIn: "/auth/signin",
+  // },
   // adapter: PrismaAdapter(prisma) as Adapter,
-  secret: process.env.SECRET,
-  session: {
-    strategy: "jwt",
-  },
+  // secret: process.env.SECRET,
+  // session: {
+  //   strategy: "jwt",
+  // },
 
   providers: [
   // CredentialsProvider({
@@ -68,10 +68,10 @@ export const authOptions: NextAuthOptions = {
     //   clientSecret: process.env.GITHUB_CLIENT_SECRET!,
     // }),
 
-    GoogleProvider({
-      clientId: process.env.GOOGLE_CLIENT_ID!,
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
-    }),
+    // GoogleProvider({
+    //   clientId: process.env.GOOGLE_CLIENT_ID!,
+    //   clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
+    // }),
 
     // EmailProvider({
     //   server: {
@@ -86,34 +86,34 @@ export const authOptions: NextAuthOptions = {
     // }),
   ],
 
-  callbacks: {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    jwt: async (payload: any) => {
-      const { token } = payload;
-      const user = payload.user;
+  // callbacks: {
+  //   // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  //   jwt: async (payload: any) => {
+  //     const { token } = payload;
+  //     const user = payload.user;
 
-      if (user) {
-        return {
-          ...token,
-          id: user.id,
-        };
-      }
-      return token;
-    },
+  //     if (user) {
+  //       return {
+  //         ...token,
+  //         id: user.id,
+  //       };
+  //     }
+  //     return token;
+  //   },
 
-    session: async ({ session, token }) => {
-      if (session?.user) {
-        return {
-          ...session,
-          user: {
-            ...session.user,
-            id: token?.id,
-          },
-        };
-      }
-      return session;
-    },
-  },
+  //   session: async ({ session, token }) => {
+  //     if (session?.user) {
+  //       return {
+  //         ...session,
+  //         user: {
+  //           ...session.user,
+  //           id: token?.id,
+  //         },
+  //       };
+  //     }
+  //     return session;
+  //   },
+  // },
 
   // debug: process.env.NODE_ENV === "developement",
 };

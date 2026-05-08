@@ -4,14 +4,14 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact Us | Let's deal values",
-  description: "",
+  description: "Feel free to reach out to us anytime! Our dedicated team is here to assist you promptly. Your satisfaction is our priority.",
 };
 
 const ContactPage = () => {
   return (
     <>
       <Breadcrumb
-        pageName="Contact Us"
+        pageName="Contact Us | Let's deal values"
         pageDescription="Feel free to reach out to us anytime! Our dedicated team is here to assist you promptly. Your satisfaction is our priority."
       />
 

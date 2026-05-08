@@ -4,14 +4,14 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Our Vendors | Let's deal values",
-  description: "",
+  description: "Discover the amazing vendors who partner with us to bring you the best deals and products.",
 };
 
 const VendorsPage = () => {
   return (
     <>
       <Breadcrumb
-        pageName="Our Vendors"
+        pageName="Our Vendors | Let's deal values"
         pageDescription="Discover the amazing vendors who partner with us to bring you the best deals and products."
       />
 

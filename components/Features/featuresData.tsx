@@ -21,7 +21,7 @@ const featuresData: Feature[] = [
     paragraph:
       "Let’s Deal Values develops responsive websites, e-commerce platforms, and complex web applications using modern technologies and frameworks such as HTML, CSS, JavaScript, React, and Bootstrap. They also provide UI/UX design, animation, and graphic design services to create visually appealing digital experiences.",
     btn: "Learn More",
-    btnLink: "/#",
+    btnLink: "",
   },
   {
     id: 2,
@@ -42,7 +42,7 @@ const featuresData: Feature[] = [
     title: "Digital Marketing and Training",
     paragraph: "Let’s Deal Values provides digital marketing training covering SEO, social media marketing, Google Analytics, content marketing, and paid advertising campaigns. These programs are designed for beginners and professionals, offering hands-on experience with real-world projects to enhance career growth. ",
     btn: "Learn More",
-    btnLink: "/#",
+    btnLink: "",
   },
   {
     id: 3,
@@ -95,7 +95,7 @@ const featuresData: Feature[] = [
     title: "IT Hardware Services",
     paragraph: "In addition to software solutions, it also operates as a computer and laptop dealer, offering repair services, and second-hand hardware sales.",
     btn: "Learn More",
-    btnLink: "/#",
+    btnLink: "",
   },
   {
     id: 4,
@@ -128,7 +128,7 @@ const featuresData: Feature[] = [
     title: "All Essential Integrations",
     paragraph: "Lorem Ipsum is simply dummy text of the printing and industry.",
     btn: "Learn More",
-    btnLink: "/#",
+    btnLink: "",
   },
 ];
 export default featuresData;

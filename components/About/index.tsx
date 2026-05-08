@@ -1,7 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const About = () => {
+  const pathUrl = usePathname();
+
   return (
     <section
       id="about"
@@ -28,8 +33,17 @@ const About = () => {
                   ISP/ICS 27001:2022
                 </p>
 
+                <div className="mb-10 text-sm leading-relaxed text-gray-500 dark:text-dark-6">
+                  <p className="font-medium">
+                    BUSINESS NAME REGISTRATION NO.{" "}
+                    <span className="text-black font-medium dark:text-white">
+                      8907383
+                    </span>
+                  </p>
+                </div>
+
                 <Link
-                  href="#"
+                  href="/about"
                   className="inline-flex items-center justify-center rounded-md bg-primary px-7 py-3 text-center text-base font-medium text-white duration-300 hover:bg-primary/90"
                 >
                   Know More
@@ -187,6 +201,24 @@ const About = () => {
                   </div>
                 </div>
               </div>
+            </div>
+            <div
+              className={`
+                ${
+                  pathUrl === "/about" ? "block" : "hidden"
+                } flex justify-center w-full mt-10 lg:mt-20
+              `}
+            >
+              <div>
+                <Image
+                  src="/images/CAC-Lets-deal-value.png"
+                  alt="About Us"
+                  width={700}
+                  height={300}
+                  className="w-full"
+                />
+              </div>
+              {/* <p className="text-center bg-green-400"></p> */}
             </div>
           </div>
         </div>

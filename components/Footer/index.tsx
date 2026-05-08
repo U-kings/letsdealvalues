@@ -116,7 +116,7 @@ const Footer = () => {
                 <ul>
                   <li>
                     <Link
-                      href="#"
+                      href="/"
                       className="mb-3 inline-block text-base text-black font-medium hover:text-primary"
                     >
                       Home
@@ -124,7 +124,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href="about"
+                      href="/about"
                       className="mb-3 inline-block text-base text-black font-medium hover:text-primary"
                     >
                       About
@@ -132,7 +132,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href="vendors"
+                      href="/vendors"
                       className="mb-3 inline-block text-base text-black font-medium hover:text-primary"
                     >
                       Vendors
@@ -157,28 +157,28 @@ const Footer = () => {
                 <ul>
                   <li>
                     <Link
-                      href="#"
+                      href=""
                       className="mb-3 inline-block text-base text-black font-medium hover:text-primary"
                     >
                       Web Development
-                       {/* and Design */}
+                      {/* and Design */}
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="#"
+                      href=""
                       className="mb-3 inline-block text-base text-black font-medium hover:text-primary"
                     >
                       Digital Marketing
-                       {/* and Training */}
+                      {/* and Training */}
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="#"
+                      href=""
                       className="mb-3 inline-block text-base text-black font-medium hover:text-primary"
                     >
-                     IT Hardware Services
+                      IT Hardware Services
                     </Link>
                   </li>
                   {/* <li>
@@ -200,7 +200,7 @@ const Footer = () => {
                 <ul>
                   <li>
                     <Link
-                      href="#"
+                      href=""
                       className="mb-3 inline-block text-base text-black font-medium hover:text-primary"
                     >
                       IT Infrastructure
@@ -293,9 +293,11 @@ const Footer = () => {
                     </DialogTrigger>
 
                     <DialogOverlay isDismissable className="z-999">
-                      <DialogContent className="w-8/12 bg-white text-black">
+                      <DialogContent className="w-12/12 lg:w-8/12 bg-white text-black">
                         <DialogHeader>
-                          <DialogTitle className="mb-2">Terms and Conditions</DialogTitle>
+                          <DialogTitle className="mb-2">
+                            Terms and Conditions
+                          </DialogTitle>
                           {/* <DialogDescription>
                             View our terms and conditions for more details on
                             the use of our services. By accessing or using our

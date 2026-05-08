@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Certificates from "@/components/Certificates";
 import Clients from "@/components/Clients";
 import Contact from "@/components/Contact";
 import Features from "@/components/Features";
@@ -13,6 +14,7 @@ export default function Home() {
       <About />
       {/* <Contact/> */}
       <Clients />
+      <Certificates/>
     </main>
   );
 }

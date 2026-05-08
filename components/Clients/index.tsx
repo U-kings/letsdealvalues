@@ -8,7 +8,7 @@ const Clients = () => {
         {/* <h2 className="mb-6 text-center text-3xl font-bold text-dark dark:text-white sm:text-4xl">
           We have worked with over 100+ clients
         </h2> */}
-        <p className="mx-auto mb-12 max-w-150 text-center text-base font-medium text-body-color">
+        <p className="mx-auto mb-12 max-w-160 text-center text-base font-medium text-body-color">
            Let&apos;s deal Values collaborates with renowned Original Equipment Manufacturers (OEMs) and leading global IT firms, celebrated for their superior quality and performance-driven products and solutions.
         </p>
       </div>
