@@ -108,8 +108,8 @@ const Contact = () => {
                     <h3 className="mb-4.5 text-lg font-semibold text-dark dark:text-white">
                       How Can We Help?
                     </h3>
-                    <a href="mailto:Help-Supports@Letsdealvalues.com" className="text-base text-body-color dark:text-dark-6">
-                      Help-Supports@Letsdealvalues.com
+                    <a href="mailto:supports@Letsdealvalues.com" className="text-base text-body-color dark:text-dark-6">
+                      supports@Letsdealvalues.com
                     </a>
                     {/* <p className="mt-1 text-base text-body-color dark:text-dark-6">
                       contact@yourdomain.com
