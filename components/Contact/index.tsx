@@ -1,4 +1,60 @@
+"use client";
+
+import { useEffect, useState } from "react";
+// import { Toast } from "../tailgrids/core/toast";
+// import { Spinner } from "../tailgrids/core";
+
 const Contact = () => {
+  const [isLoading, setIsLoading] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [errorMessage, setErrormessage] = useState("");
+
+  useEffect(() => {
+    const timerId = setTimeout(() => {
+      setErrormessage("");
+    }, 3000);
+
+    return () => {
+      clearTimeout(timerId);
+    };
+  }, [errorMessage]);
+
+  async function handleSubmit(event: {
+    preventDefault: () => void;
+    target: HTMLFormElement | undefined;
+  }) {
+    setIsLoading(true);
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "6a523d3d-e3b0-4288-b338-9a5f677dc32a");
+    // formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    });
+    const result = await response.json();
+    if (result.success) {
+      // console.log(result);
+      // <Toast variant="success" message="Your message has been sent." />;
+      setIsLoading(false);
+      setIsSuccess(true);
+    } else {
+      // <Toast variant="error" message="Something went wrong." />;
+      setErrormessage("Something went wrong. Please try again.");
+      setIsLoading(false);
+      setIsSuccess(false);
+    }
+  }
+
   return (
     <section id="contact" className="relative py-20 md:py-[120px]">
       <div className="absolute left-0 top-0 -z-[1] h-full w-full bg-white dark:bg-dark"></div>
@@ -52,9 +108,9 @@ const Contact = () => {
                     <h3 className="mb-4.5 text-lg font-semibold text-dark dark:text-white">
                       How Can We Help?
                     </h3>
-                    <p className="text-base text-body-color dark:text-dark-6">
+                    <a href="mailto:Help-Supports@Letsdealvalues.com" className="text-base text-body-color dark:text-dark-6">
                       Help-Supports@Letsdealvalues.com
-                    </p>
+                    </a>
                     {/* <p className="mt-1 text-base text-body-color dark:text-dark-6">
                       contact@yourdomain.com
                     </p> */}
@@ -72,7 +128,7 @@ const Contact = () => {
               <h3 className="mb-8 text-2xl font-semibold text-dark dark:text-white md:text-[28px] md:leading-[1.42]">
                 Send us a Message
               </h3>
-              <form>
+              <form onSubmit={handleSubmit}>
                 <div className="mb-5.5">
                   <label
                     htmlFor="fullName"
@@ -111,7 +167,8 @@ const Contact = () => {
                   <input
                     type="text"
                     name="phone"
-                    placeholder="+885 1254 5211 552"
+                    placeholder="+234 254 5211 552"
+                    // placeholder="+885 1254 5211 552"
                     className="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-white"
                   />
                 </div>
@@ -134,9 +191,19 @@ const Contact = () => {
                     type="submit"
                     className="inline-flex items-center justify-center rounded-md bg-primary px-10 py-3 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-primary/90"
                   >
-                    Send
+                    {isLoading ? "Loading..." : "Send"}
                   </button>
                 </div>
+                {isSuccess && (
+                  <div className="mt-4 text-green-500 bg-green-100 p-2 rounded">
+                    Your message has been sent successfully!
+                  </div>
+                )}
+                {errorMessage && (
+                  <div className="mt-4 text-red-400 bg-red-100 p-2 rounded">
+                    {errorMessage}
+                  </div>
+                )}
               </form>
             </div>
           </div>
