@@ -10,6 +10,7 @@ const nextConfig: NextConfig = {
   },
   // trailingSlash: false, // Set to false to remove trailing slashes
   output: "export",
+  trailingSlash: true,
 };
 
 export default nextConfig;

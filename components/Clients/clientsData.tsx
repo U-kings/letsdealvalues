@@ -7,13 +7,13 @@ export const clientsData: Client[] = [
     logoWhite: "/images/brands/streetwise-logo.png",
     link: "https://www.instagram.com/official_streetwise?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
   },
-  // {
-  //   id: 2,
-  //   title: "Lineicons",
-  //   logo: "images/brands/lineicons.svg",
-  //   logoWhite: "/images/brands/lineicons-white.svg",
-  //   link: "https://lineicons.com/",
-  // },
+  {
+    id: 2,
+    title: "ManageEngine",
+    logo: "/images/brands/manageengine-logo.png",
+    logoWhite: "/images/brands/manageengine-logo.png",
+    link: "/",
+  },
   // {
   //   id: 3,
   //   title: "Uideck",

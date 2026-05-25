@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 // import { Toast } from "../tailgrids/core/toast";
 // import { Spinner } from "../tailgrids/core";
@@ -47,11 +48,19 @@ const Contact = () => {
       // <Toast variant="success" message="Your message has been sent." />;
       setIsLoading(false);
       setIsSuccess(true);
+      formData.delete('name');
+      formData.delete('email');
+      formData.delete('phone');
+      formData.delete('message');
     } else {
       // <Toast variant="error" message="Something went wrong." />;
       setErrormessage("Something went wrong. Please try again.");
       setIsLoading(false);
       setIsSuccess(false);
+      formData.delete('name');
+      formData.delete('email');
+      formData.delete('phone');
+      formData.delete('message');
     }
   }
 
@@ -108,11 +117,49 @@ const Contact = () => {
                     <h3 className="mb-4.5 text-lg font-semibold text-dark dark:text-white">
                       How Can We Help?
                     </h3>
-                    <a href="mailto:supports@Letsdealvalues.com" className="text-base text-body-color dark:text-dark-6">
-                      supports@Letsdealvalues.com
+                    <a
+                      href="mailto:franklin@letsdealvalues.com"
+                      className="text-base text-body-color dark:text-dark-6"
+                    >
+                      {/* supports@Letsdealvalues.com */}
+                      Franklin@letsdealvalues.com
                     </a>
                     {/* <p className="mt-1 text-base text-body-color dark:text-dark-6">
                       contact@yourdomain.com
+                    </p> */}
+                  </div>
+                </div>
+                <div className="mb-8 flex w-[330px] max-w-full">
+                  <div className="mr-6 text-[32px] text-primary">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      className="lucide lucide-phone-icon lucide-phone"
+                    >
+                      <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="mb-4.5 text-lg font-semibold text-dark dark:text-white">
+                      Get in Touch
+                    </h3>
+                    <Link
+                      href="https://wa.me/2349027016389?text=Hello%20Lets%20Deal%20Values!%20I%20have%20a%20question%20about%20your%20services."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-base text-body-color dark:text-dark-6"
+                    >
+                      09027016389
+                    </Link>
+                    {/* <p className="text-base text-body-color dark:text-dark-6">
+                      09027016389
                     </p> */}
                   </div>
                 </div>
@@ -139,7 +186,7 @@ const Contact = () => {
                   <input
                     type="text"
                     name="fullName"
-                    placeholder="Adam Gelius"
+                    placeholder=""
                     className="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-white"
                   />
                 </div>
@@ -153,7 +200,7 @@ const Contact = () => {
                   <input
                     type="email"
                     name="email"
-                    placeholder="example@yourmail.com"
+                    placeholder=""
                     className="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-white"
                   />
                 </div>
@@ -167,7 +214,7 @@ const Contact = () => {
                   <input
                     type="text"
                     name="phone"
-                    placeholder="+234 254 5211 552"
+                    placeholder=""
                     // placeholder="+885 1254 5211 552"
                     className="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-white"
                   />
@@ -182,7 +229,7 @@ const Contact = () => {
                   <textarea
                     name="message"
                     rows={1}
-                    placeholder="type your message here"
+                    placeholder=""
                     className="w-full resize-none border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-white"
                   ></textarea>
                 </div>

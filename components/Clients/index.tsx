@@ -3,7 +3,8 @@ import { clientsData } from "./clientsData";
 
 const Clients = () => {
   return (
-    <section className="py-20 dark:bg-dark bg-gray-100">
+    <section className="py-20 dark:bg-gray-300 bg-gray-100">
+    {/* <section className="py-20 dark:bg-dark bg-gray-100"> */}
       <div className=" ">
         {/* <h2 className="mb-6 text-center text-3xl font-bold text-dark dark:text-white sm:text-4xl">
           We have worked with over 100+ clients

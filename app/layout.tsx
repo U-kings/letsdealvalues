@@ -19,6 +19,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Let's Deal Values",
   description: "Lets Deal Values combines web development, cloud computing, IT services, and professional training to provide comprehensive digital solutions for businesses.",
+  keywords:"Let deal, letdealvalue, Let Value, Let's deal value, Let's deal Values"
 };
 
 export default function RootLayout({

@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 
 type Props = object;
@@ -15,12 +14,12 @@ const Hero = (props: Props) => {
             </div>
           </div>
         </div>
-        <div className="overflow-hidden h-170">
+        <div className="overflow-hidden lg:h-170">
           <Image
             src="/images/hero-img.jpg"
             width={1080}
             height={50}
-            className="w-full mt-[-65%]"
+            className="w-full mt-0 lg:mt-[-65%]"
             alt="hero-img"
           />
         </div>
