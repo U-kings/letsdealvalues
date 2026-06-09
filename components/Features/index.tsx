@@ -12,7 +12,7 @@ const Features = () => {
           paragraph="These are the services we offer to our clients."
         />
 
-        <div className="-mx-4 mt-12 flex flex-wrap lg:mt-20">
+        <div className="-mx-4 mt-12 grid grid-cols-2 gap-1 sm:gap-4 lg:gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:mt-20">
           {featuresData?.slice(0, 30)?.map((feature, i) => (
             <SingleFeature key={i} feature={feature} />
           ))}
