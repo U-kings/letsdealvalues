@@ -28,14 +28,14 @@ const SingleClient = ({ client }: { client: Client }) => {
           <Image
             src={logo}
             alt={title}
-            className="dark:hidden block"
+            className="dark:hidden block h-auto w-auto"
             width={140}
             height={40}
           />
           <Image
             src={logoWhite}
             alt={title}
-            className="hidden dark:block"
+            className="hidden dark:block h-auto w-auto"
             width={140}
             height={40}
           />

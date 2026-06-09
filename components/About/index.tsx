@@ -206,12 +206,12 @@ const About = () => {
               className={`
                 ${
                   pathUrl === "/about" ? "block" : "hidden"
-                } flex justify-center w-full mt-10 lg:mt-20
+                } hidden justify-center w-full mt-10 lg:mt-20
               `}
             >
               <div>
                 <Image
-                  src="/images/CAC-Lets-deal-value.png"
+                  src="/images/CAC-Lets-deal-values.png"
                   alt="About Us"
                   width={700}
                   height={300}
