@@ -1,12 +1,5 @@
 import { Client } from "@/types/client";
-export const clientsData: Client[] = [
-  {
-    id: 1,
-    title: "Streetwise",
-    logo: "/images/brands/streetwise-logo.png",
-    logoWhite: "/images/brands/streetwise-logo.png",
-    link: "https://www.instagram.com/official_streetwise?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-  },
+export const CybersecurityClientsData: Client[] = [
   {
     id: 2,
     title: "ManageEngine",
@@ -36,3 +29,15 @@ export const clientsData: Client[] = [
   //   link: "https://tailgrids.com/",
   // },
 ];
+
+export const FashionClientsData: Client[] = [
+  {
+    id: 1,
+    title: "Streetwise",
+    logo: "/images/brands/streetwise-logo.png",
+    logoWhite: "/images/brands/streetwise-logo.png",
+    link: "https://www.instagram.com/official_streetwise?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+  },
+];
+
+export const InfrastructureClientsData: Client[] = [];

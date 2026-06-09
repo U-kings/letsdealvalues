@@ -4,6 +4,7 @@ import Clients from "@/components/Clients";
 import Contact from "@/components/Contact";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
+import VendorTabs from "@/components/Vendors/VendorTabs";
 import Image from "next/image";
 
 export default function Home() {
@@ -13,7 +14,8 @@ export default function Home() {
       <Features />
       <About />
       {/* <Contact/> */}
-      <Clients />
+      {/* <Clients /> */}
+      {/* <VendorTabs /> */}
       {/* <Certificates/> */}
     </main>
   );

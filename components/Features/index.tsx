@@ -13,7 +13,7 @@ const Features = () => {
         />
 
         <div className="-mx-4 mt-12 flex flex-wrap lg:mt-20">
-          {featuresData?.slice(0, 3)?.map((feature, i) => (
+          {featuresData?.slice(0, 30)?.map((feature, i) => (
             <SingleFeature key={i} feature={feature} />
           ))}
         </div>
