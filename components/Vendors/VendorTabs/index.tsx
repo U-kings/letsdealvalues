@@ -22,7 +22,8 @@ const VendorTabs = (props: Props) => {
         <div className="container py-12 text-black">
           <TabRoot defaultValue="Cybersecurity" variant="default" className="border-none">
             <TabList>
-              {["Cybersecurity", "Infrastructure", "Fashion"].map((tab) => (
+              {["Cybersecurity", "Fashion"].map((tab) => (
+              // {["Cybersecurity", "Infrastructure", "Fashion"].map((tab) => (
                 <TabTrigger
                   key={tab}
                   value={tab}
@@ -37,9 +38,9 @@ const VendorTabs = (props: Props) => {
             <TabContent value="Cybersecurity">
               <Clients clientType="Cybersecurity" />
             </TabContent>
-            <TabContent value="Infrastructure">
+            {/* <TabContent value="Infrastructure">
               <Clients clientType="Infrastructure" />
-            </TabContent>
+            </TabContent> */}
             <TabContent value="Fashion">
               <Clients clientType="Fashion" />
             </TabContent>
