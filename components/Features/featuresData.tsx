@@ -12,39 +12,39 @@ import {
 } from "@tailgrids/icons";
 
 const featuresData: Feature[] = [
-  {
-    id: 1,
-    icon: (
-      <Code1Square />
-    ),
-    title: "Web Development and Design",
-    paragraph:
-      "Let’s Deal Values develops responsive websites, e-commerce platforms, and complex web applications using modern technologies and frameworks such as HTML, CSS, JavaScript, React, and Bootstrap. They also provide UI/UX design, animation, and graphic design services to create visually appealing digital experiences.",
-    btn: "",
-    btnLink: "",
-  },
-  {
-    id: 2,
-    icon: (
-      <Buildings11 />
-    ),
-    title: "Digital Marketing and Training",
-    paragraph:
-      "Let’s Deal Values provides digital marketing training covering SEO, social media marketing, Google Analytics, content marketing, and paid advertising campaigns. These programs are designed for beginners and professionals, offering hands-on experience with real-world projects to enhance career growth. ",
-    btn: "",
-    btnLink: "",
-  },
-  {
-    id: 3,
-    icon: (
-      <Layers2 />
-    ),
-    title: "IT Hardware Services",
-    paragraph:
-      "In addition to software solutions, it also operates as a computer and laptop dealer, offering repair services, and second-hand hardware sales.",
-    btn: "",
-    btnLink: "",
-  },
+  // {
+  //   id: 1,
+  //   icon: (
+  //     <Code1Square />
+  //   ),
+  //   title: "Web Development and Design",
+  //   paragraph:
+  //     "Let’s Deal Values develops responsive websites, e-commerce platforms, and complex web applications using modern technologies and frameworks such as HTML, CSS, JavaScript, React, and Bootstrap. They also provide UI/UX design, animation, and graphic design services to create visually appealing digital experiences.",
+  //   btn: "",
+  //   btnLink: "",
+  // },
+  // {
+  //   id: 2,
+  //   icon: (
+  //     <Buildings11 />
+  //   ),
+  //   title: "Digital Marketing and Training",
+  //   paragraph:
+  //     "Let’s Deal Values provides digital marketing training covering SEO, social media marketing, Google Analytics, content marketing, and paid advertising campaigns. These programs are designed for beginners and professionals, offering hands-on experience with real-world projects to enhance career growth. ",
+  //   btn: "",
+  //   btnLink: "",
+  // },
+  // {
+  //   id: 3,
+  //   icon: (
+  //     <Layers2 />
+  //   ),
+  //   title: "IT Hardware Services",
+  //   paragraph:
+  //     "In addition to software solutions, it also operates as a computer and laptop dealer, offering repair services, and second-hand hardware sales.",
+  //   btn: "",
+  //   btnLink: "",
+  // },
   {
     id: 4,
     icon: <Gear1 />,
