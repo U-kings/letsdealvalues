@@ -1,9 +1,9 @@
 import SingleClient from "./SingleClient";
 import { CybersecurityClientsData, InfrastructureClientsData } from "./clientsData";
-import { FashionClientsData } from "./clientsData";
+import { ValoClientsData } from "./clientsData";
 
 type Props = {
-  clientType: "Cybersecurity" | "Infrastructure" | "Fashion";
+  clientType: "Cybersecurity" | "Infrastructure" | "Valo";
 };
 
 const Clients = ({ clientType }: Props) => {
@@ -25,7 +25,7 @@ const Clients = ({ clientType }: Props) => {
           {clientType === "Cybersecurity" && CybersecurityClientsData.map((client, i) => (
             <SingleClient key={i} client={client} />
           ))}
-          {clientType === "Fashion" && FashionClientsData.map((client, i) => (
+          {clientType === "Valo" && ValoClientsData.map((client, i) => (
             <SingleClient key={i} client={client} />
           ))}
           {clientType === "Infrastructure" && InfrastructureClientsData.map((client, i) => (

@@ -30,7 +30,7 @@ export const CybersecurityClientsData: Client[] = [
   // },
 ];
 
-export const FashionClientsData: Client[] = [
+export const ValoClientsData: Client[] = [
   {
     id: 1,
     title: "Streetwise",
