@@ -40,4 +40,12 @@ export const ValoClientsData: Client[] = [
   },
 ];
 
-export const InfrastructureClientsData: Client[] = [];
+export const ITInfrastructureClientsData: Client[] = [
+   {
+    id: 1,
+    title: "Dell",
+    logo: "/images/brands/dell-logo.png",
+    logoWhite: "/images/brands/dell-logo.png",
+    link: "/",
+  },
+];

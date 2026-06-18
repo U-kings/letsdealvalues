@@ -19,11 +19,11 @@ const VendorTabs = (props: Props) => {
           Manufacturers (OEMs) and leading global IT firms, celebrated for their
           superior quality and performance-driven products and solutions.
         </p>
-        <div className="container py-12 text-black">
+        <div className="lg:container py-12 text-black">
           <TabRoot defaultValue="Cybersecurity" variant="default" className="border-none">
             <TabList>
-              {["Cybersecurity", "Valo"].map((tab) => (
-              // {["Cybersecurity", "Infrastructure", "Valo"].map((tab) => (
+              {/* {["Cybersecurity", "Valo"].map((tab) => ( */}
+              {["Cybersecurity", "IT Infrastructure", "Valo"].map((tab) => (
                 <TabTrigger
                   key={tab}
                   value={tab}
@@ -38,9 +38,9 @@ const VendorTabs = (props: Props) => {
             <TabContent value="Cybersecurity">
               <Clients clientType="Cybersecurity" />
             </TabContent>
-            {/* <TabContent value="Infrastructure">
-              <Clients clientType="Infrastructure" />
-            </TabContent> */}
+            <TabContent value="IT Infrastructure">
+              <Clients clientType="IT Infrastructure" />
+            </TabContent>
             <TabContent value="Valo">
               <Clients clientType="Valo" />
             </TabContent>

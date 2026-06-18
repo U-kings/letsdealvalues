@@ -12,13 +12,18 @@ const Contact = () => {
 
   useEffect(() => {
     const timerId = setTimeout(() => {
-      setErrormessage("");
-    }, 3000);
+      if (errorMessage) {
+        setErrormessage("");
+      }
+      if (isSuccess) {
+        setIsSuccess(false);
+      }
+    }, 4000);
 
     return () => {
       clearTimeout(timerId);
     };
-  }, [errorMessage]);
+  }, [errorMessage, isSuccess]);
 
   async function handleSubmit(event: {
     preventDefault: () => void;
@@ -34,6 +39,19 @@ const Contact = () => {
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
 
+    // Checks if any field is an empty string, null, or undefined
+    const hasEmptyField = Object.values(object).some(
+      (value) => value === "" || value === null || value === undefined,
+    );
+
+    if (hasEmptyField) {
+      setErrormessage("Please fill in all required fields.");
+      setIsLoading(false);
+      return;
+    }
+
+    // console.log(object);
+
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       headers: {
@@ -43,24 +61,25 @@ const Contact = () => {
       body: json,
     });
     const result = await response.json();
+    // if (false) {
     if (result.success) {
       // console.log(result);
       // <Toast variant="success" message="Your message has been sent." />;
       setIsLoading(false);
       setIsSuccess(true);
-      formData.delete('name');
-      formData.delete('email');
-      formData.delete('phone');
-      formData.delete('message');
+      formData.delete("name");
+      formData.delete("email");
+      formData.delete("phone");
+      formData.delete("message");
     } else {
       // <Toast variant="error" message="Something went wrong." />;
       setErrormessage("Something went wrong. Please try again.");
       setIsLoading(false);
       setIsSuccess(false);
-      formData.delete('name');
-      formData.delete('email');
-      formData.delete('phone');
-      formData.delete('message');
+      formData.delete("name");
+      formData.delete("email");
+      formData.delete("phone");
+      formData.delete("message");
     }
   }
 
@@ -184,6 +203,7 @@ const Contact = () => {
                     Full Name*
                   </label>
                   <input
+                    required
                     type="text"
                     name="fullName"
                     placeholder=""
@@ -198,6 +218,7 @@ const Contact = () => {
                     Email*
                   </label>
                   <input
+                    required
                     type="email"
                     name="email"
                     placeholder=""
@@ -212,6 +233,7 @@ const Contact = () => {
                     Phone*
                   </label>
                   <input
+                    required
                     type="text"
                     name="phone"
                     placeholder=""
@@ -227,6 +249,7 @@ const Contact = () => {
                     Message*
                   </label>
                   <textarea
+                    required
                     name="message"
                     rows={1}
                     placeholder=""

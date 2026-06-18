@@ -1,9 +1,9 @@
 import SingleClient from "./SingleClient";
-import { CybersecurityClientsData, InfrastructureClientsData } from "./clientsData";
+import { CybersecurityClientsData, ITInfrastructureClientsData } from "./clientsData";
 import { ValoClientsData } from "./clientsData";
 
 type Props = {
-  clientType: "Cybersecurity" | "Infrastructure" | "Valo";
+  clientType: "Cybersecurity" | "IT Infrastructure" | "Valo";
 };
 
 const Clients = ({ clientType }: Props) => {
@@ -20,15 +20,15 @@ const Clients = ({ clientType }: Props) => {
           superior quality and performance-driven products and solutions.
         </p> */}
       </div>
-      <div className="container px-4">
-        <div className="-mx-4 flex flex-wrap items-center justify-center gap-8 xl:gap-11">
+      <div className="container px-2 lg:px-4">
+        <div className="-mx-4 flex flex-wrap items-center justify-center gap-4 xl:gap-11">
           {clientType === "Cybersecurity" && CybersecurityClientsData.map((client, i) => (
             <SingleClient key={i} client={client} />
           ))}
           {clientType === "Valo" && ValoClientsData.map((client, i) => (
             <SingleClient key={i} client={client} />
           ))}
-          {clientType === "Infrastructure" && InfrastructureClientsData.map((client, i) => (
+          {clientType === "IT Infrastructure" && ITInfrastructureClientsData.map((client, i) => (
             <SingleClient key={i} client={client} />
           ))}
         </div>
