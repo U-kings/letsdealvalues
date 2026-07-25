@@ -26,7 +26,7 @@ const Hero = (props: Props) => {
             src="/images/hero-img.jpg"
             width={1080}
             height={50}
-            className="w-full mt-0 lg:mt-[-65%] wow animate__fadeIn"
+            className="w-full mt-0 lg:mt-[-55%] wow animate__fadeIn"
             alt="hero-img"
           />
         </div>
