@@ -85,10 +85,10 @@ const About = () => {
                       global standard, our security framework protects sensitive
                       client data through continuous risk assessment and
                       management.
-                      <p className="my-2">
-                        We safeguard your business by maintaining the core{" "}
-                        <span className="font-semibold">CIA Triad</span>:
-                      </p>
+                    </p>
+                    <p className="my-2">
+                      We safeguard your business by maintaining the core{" "}
+                      <span className="font-semibold">CIA Triad</span>:
                     </p>
                     <ul className="list-outside list-disc ml-11 mb-2">
                       <li>

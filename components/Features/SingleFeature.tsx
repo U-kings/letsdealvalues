@@ -6,16 +6,23 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
   return (
     <div className="px-2 lg:px-4">
       {/* <div className="w-full px-4 md:w-3/3 lg:w-1/3"> */}
-      <div className="wow fadeInUp group mb-12" data-wow-delay=".15s">
-        <div className="relative z-10 mb-8 flex h-17.5 w-17.5 items-center justify-center rounded-2xl bg-primary">
-          <span className="absolute left-0 top-0 z-[-1] mb-8 flex h-17.5 w-17.5 rotate-25 items-center justify-center rounded-2xl bg-primary/20 duration-300 group-hover:rotate-45"></span>
-          {icon}
+      <div
+        className="wow fadeInUp group mb-12 text-center md:text-left"
+        data-wow-delay=".15s"
+      >
+        <div className="flex items-center">
+          <div className="relative z-10 mb-8 mx-auto md:mx-0 flex h-17.5 w-17.5 items-center justify-center rounded-2xl bg-primary">
+            <span className="absolute left-0 top-0 z-[-1] mb-8 flex h-17.5 w-17.5 rotate-25 items-center justify-center rounded-2xl bg-primary/20 duration-300 group-hover:rotate-45"></span>
+            {icon}
+          </div>
         </div>
         <h3 className="mb-3 text-xl font-bold text-dark dark:text-white">
           {title}
         </h3>
         <p className="mb-8 text-body-color dark:text-dark-6 lg:mb-11">
-          {paragraph?.length > 100 ? paragraph.slice(0, 100) + "..." : paragraph}
+          {paragraph?.length > 100
+            ? paragraph.slice(0, 100) + "..."
+            : paragraph}
         </p>
         <Link
           href={btnLink}
