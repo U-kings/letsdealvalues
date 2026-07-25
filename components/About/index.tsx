@@ -10,18 +10,21 @@ const About = () => {
   return (
     <section
       id="about"
-      className="bg-gray-1 pb-8 pt-20 dark:bg-dark-2 lg:pb-[70px] lg:pt-[120px]"
+      className="bg-gray-1 pb-8 pt-20 dark:bg-dark-2 lg:pb-17.5 lg:pt-30"
     >
       <div className="container">
         <div className="wow fadeInUp" data-wow-delay=".2s">
-          <div className="-mx-4 flex flex-wrap items-center">
+          <div className="-mx-4 flex flex-wrap ">
             <div className="w-full px-4 lg:w-1/2">
-              <div className="mb-12 max-w-[540px] lg:mb-0">
+              <div className="mb-12 max-w-135 lg:mb-0">
                 <h2 className="mb-5 text-3xl font-bold leading-tight text-dark dark:text-white sm:text-[40px] sm:leading-[1.2]">
                   Let&apos;s Deal Values.
                 </h2>
-                <p className="mb-10 text-base leading-relaxed text-body-color dark:text-dark-6">
-                  Let&apos;s Deal Values is a web development and IT solutions
+                {/* <div className={`${pathUrl === "/about" ? "block" : "hidden"}`}> */}
+
+                {pathUrl !== "/about" ? (
+                  <p className="mb-10 text-base leading-relaxed text-body-color dark:text-dark-6">
+                    {/* Let&apos;s Deal Values is a web development and IT solutions
                   company founded in 2023 in Lagos, Nigeria, specialising in
                   digital solutions, IT infrastructure, and professional
                   training. Also, Let Deal Values believes in Information
@@ -30,8 +33,89 @@ const About = () => {
                   It focuses on the CIA triad—ensuring information remains
                   Confidential, Intact, and Available—by integrating people,
                   processes, and technology into a continuous improvement cycle:
-                  ISP/ICS 27001:2022
-                </p>
+                  ISP/ICS 27001:2022 */}
+                    At{" "}
+                    <span className="font-semibold">
+                      Let&apos;s Deal Values
+                    </span>
+                    , we understand that modern businesses require technology
+                    that is fast, scalable, and completely secure. <br />
+                    <br />
+                    As an independent multi-vendor IT consulting firm, we
+                    partner with world-class technology leaders to deliver
+                    tailored IT hardware, management platforms, and enterprise
+                    cybersecurity solutions. Whether you are upgrading your
+                    server infrastructure, automating business processes, or
+                    securing sensitive data against cyber threats, we deliver
+                    the tools and expertise your business needs to thrive.
+                    <br />
+                    <br />
+                    <span className="font-semibold">
+                      Built on International Security Standards
+                    </span>
+                    <br />
+                    <br /> We embed strict{" "}
+                    <span className="font-semibold">
+                      ISO/IEC 27001:2022
+                    </span>{" "}
+                    principles into every project—protecting your critical
+                    assets through proactive risk management and continuous
+                    oversight.
+                  </p>
+                ) : (
+                  <div className="text-base leading-relaxed text-body-color dark:text-dark-6">
+                    <p>
+                      Founded in 2023 in Lagos, Nigeria,{" "}
+                      <span className="font-semibold">
+                        Let&apos;s Deal Values
+                      </span>{" "}
+                      is a premier IT solutions, infrastructure consulting, and
+                      digital development firm. We empower organizations across
+                      Africa by delivering robust digital solutions, enterprise
+                      IT infrastructure, and professional training.
+                    </p>
+                    <p className="font-semibold my-2">
+                      Our Commitment to Information Security
+                    </p>
+                    <p className="mb-2">
+                      At Let&apos;s Deal Values, we embed strict Information
+                      Security Management System (ISMS) principles into
+                      everything we do. Adhering to the{" "}
+                      <span className="font-semibold">ISO/IEC 27001:2022</span>{" "}
+                      global standard, our security framework protects sensitive
+                      client data through continuous risk assessment and
+                      management.
+                      <p className="my-2">
+                        We safeguard your business by maintaining the core{" "}
+                        <span className="font-semibold">CIA Triad</span>:
+                      </p>
+                    </p>
+                    <ul className="list-outside list-disc ml-11 mb-2">
+                      <li>
+                        <span className="font-semibold">Confidentiality:</span>{" "}
+                        Ensuring data is accessible only to authorized
+                        personnel.
+                      </li>
+                      <li>
+                        <span className="font-semibold">Integrity:</span>{" "}
+                        Safeguarding the accuracy and completeness of
+                        information and processing methods.
+                      </li>
+                      <li>
+                        <span className="font-semibold">Availability:</span>{" "}
+                        Ensuring authorized users have uninterrupted access to
+                        critical assets when needed.
+                      </li>
+                    </ul>
+                    <p className="mb-5">
+                      By seamlessly integrating people, processes, and
+                      technology into a continuous improvement cycle, we ensure
+                      your IT infrastructure remains secure, compliant, and
+                      resilient.
+                    </p>
+                  </div>
+                )}
+                {/* </div> */}
 
                 <div className="mb-10 text-sm leading-relaxed text-gray-500 dark:text-dark-6">
                   <p className="font-medium">

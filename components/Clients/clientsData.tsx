@@ -1,26 +1,33 @@
 import { Client } from "@/types/client";
 export const CybersecurityClientsData: Client[] = [
   {
-    id: 2,
+    id: 1,
     title: "ManageEngine",
     logo: "/images/brands/manageengine-logo.png",
     logoWhite: "/images/brands/manageengine-logo.png",
     link: "/",
   },
-  // {
-  //   id: 3,
-  //   title: "Uideck",
-  //   logo: "/images/brands/uideck.svg",
-  //   logoWhite: "/images/brands/uideck-white.svg",
-  //   link: "https://uideck.com/",
-  // },
-  // {
-  //   id: 4,
-  //   title: "AyroUI",
-  //   logo: "/images/brands/ayroui.svg",
-  //   logoWhite: "/images/brands/ayroui-white.svg",
-  //   link: "https://ayroui.com/",
-  // },
+  {
+    id: 2,
+    title: "Motadata",
+    logo: "/images/brands/motadata-logo.png",
+    logoWhite: "/images/brands/motadata-logo.png",
+    link: "/",
+  },
+  {
+    id: 3,
+    title: "SeamlessHR",
+    logo: "/images/brands/SeamlessHR-logo.png",
+    logoWhite: "/images/brands/SeamlessHR-logo-white.png",
+    link: "/",
+  },
+  {
+    id: 4,
+    title: "Kaspersky",
+    logo: "/images/brands/kaspersky-logo.png",
+    logoWhite: "/images/brands/kaspersky-logo-white.png",
+    link: "/",
+  },
   // {
   //   id: 5,
   //   title: "TailGrids",

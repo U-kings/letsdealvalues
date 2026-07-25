@@ -55,7 +55,7 @@ const SingleCertificate = (
                 alt={title}
                 width="500"
                 height="60"
-                className=" overflow-auto"
+                className="auto overflow-auto"
                 title="PDF Viewer"
               />
               {/* /> */}
@@ -75,14 +75,14 @@ const SingleCertificate = (
             <Image
               src={logo}
               alt={title}
-              className="dark:hidden block cursor-pointer"
+              className="dark:hidden block cursor-pointer auto"
               width={50}
               height={40}
             />
             <Image
               src={logoWhite}
               alt={title}
-              className="hidden dark:block cursor-pointer"
+              className="hidden dark:block cursor-pointer auto"
               width={50}
               height={40}
             />

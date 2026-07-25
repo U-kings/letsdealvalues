@@ -20,6 +20,7 @@ import { Button } from "react-aria-components";
 const Footer = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [dialog, setDialog] = useState(1);
+  const [isLoading, setIsLoading] = useState(true);
 
   return (
     <footer
@@ -40,7 +41,7 @@ const Footer = () => {
                   loading="eager"
                 />
               </Link>
-              <p className="mb-8 max-w-[270px] text-base text-black font-medium">
+              <p className="mb-8 max-w-67.5 text-base text-black font-medium">
                 We create digital experiences for brands and companies by using
                 technology.
               </p>
@@ -330,12 +331,29 @@ const Footer = () => {
                             do not use our services.
                           </DialogDescription> */}
             </DialogHeader>
-            <div>
+            <div className="relative">
+              {isLoading && (
+                <div
+                  style={{
+                    position: "absolute",
+                    inset: 0,
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    backgroundColor: "#f3f4f6",
+                    zIndex: 10,
+                  }}
+                >
+                  <div className="spinner">Loading external content...</div>
+                </div>
+              )}
               <iframe
                 src="https://heyzine.com/flip-book/7ec31e732b.html"
                 width="100%"
                 height="600px"
                 title="PDF Viewer"
+                loading="lazy"
+                onLoad={() => setIsLoading(false)}
               />
               {/* <object
                             data="https://heyzine.com/flip-book/7ec31e732b.html"
