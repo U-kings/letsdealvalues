@@ -125,13 +125,16 @@ const About = () => {
                     </span>
                   </p>
                 </div>
-
-                <Link
-                  href="/about"
-                  className="inline-flex items-center justify-center rounded-md bg-primary px-7 py-3 text-center text-base font-medium text-white duration-300 hover:bg-primary/90"
-                >
-                  Know More
-                </Link>
+                {pathUrl !== "/about" ? (
+                  <Link
+                    href="/about"
+                    className="inline-flex items-center justify-center rounded-md bg-primary px-7 py-3 text-center text-base font-medium text-white duration-300 hover:bg-primary/90"
+                  >
+                    Know More
+                  </Link>
+                ) : (
+                  <></>
+                )}
               </div>
             </div>
 
